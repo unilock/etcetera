@@ -15,9 +15,7 @@
     "modmenu": { "links": { "mod.etcetera.contact.discord": "https://discord.gg/fT4MKzUTZS" } }
   },
 
-  "license": [
-    "All Rights Reserved"
-  ],
+  "license": "All Rights Reserved",
 
   "icon": "assets/etcetera/icon.png",
 
@@ -29,7 +27,7 @@
   "mixins": ["etcetera.mixins.json"],
 
   "depends": {
-    "fabricloader": ">=0.14.21",
+    "fabricloader": "*",
     "fabric-api": "*",
     "minecraft": "~1.20",
     "java": ">=17"
