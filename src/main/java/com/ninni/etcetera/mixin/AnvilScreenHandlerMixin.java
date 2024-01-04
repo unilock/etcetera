@@ -33,7 +33,6 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
         ItemStack input = this.input.getStack(0);
         ItemStack secondStack = this.input.getStack(1);
 
-
         if (secondStack.isOf(EtceteraItems.ITEM_LABEL) && secondStack.hasCustomName() && !input.isEmpty()) {
             ci.cancel();
             ItemStack output = input.copy();
@@ -43,16 +42,13 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
             if (!output.getNbt().contains("Label1")) {
                 nbt.putString("Label1", labelText);
                 this.levelCost.set(1);
-            } else
-            if (output.hasNbt() && output.getNbt().contains("Label1") && !output.getNbt().contains("Label2")) {
+            } else if (output.getNbt().contains("Label1") && !output.getNbt().contains("Label2")) {
                 nbt.putString("Label2", labelText);
                 this.levelCost.set(2);
-            } else
-            if (output.hasNbt() && output.getNbt().contains("Label2") && !output.getNbt().contains("Label3")) {
+            } else if (output.getNbt().contains("Label2") && !output.getNbt().contains("Label3")) {
                 nbt.putString("Label3", labelText);
                 this.levelCost.set(3);
-            } else
-            if (output.hasNbt() && output.getNbt().contains("Label2") && output.getNbt().contains("Label3") && !output.getNbt().contains("Label4")) {
+            } else if (output.getNbt().contains("Label2") && output.getNbt().contains("Label3") && !output.getNbt().contains("Label4")) {
                 nbt.putString("Label4", labelText);
                 this.levelCost.set(4);
             } else {
@@ -76,8 +72,6 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
             this.repairItemUsage = 1;
             this.output.setStack(0, output);
             this.sendContentUpdates();
-
         }
-
     }
 }

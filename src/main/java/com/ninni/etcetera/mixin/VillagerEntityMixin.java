@@ -2,7 +2,6 @@ package com.ninni.etcetera.mixin;
 
 import com.ninni.etcetera.registry.EtceteraTags;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.InteractionObserver;
 import net.minecraft.entity.passive.MerchantEntity;
 import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.item.ItemStack;
@@ -14,12 +13,10 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(VillagerEntity.class)
-public abstract class VillagerEntityMixin extends MerchantEntity implements InteractionObserver, VillagerDataContainer {
-
+public abstract class VillagerEntityMixin extends MerchantEntity implements VillagerDataContainer {
     public VillagerEntityMixin(EntityType<? extends MerchantEntity> entityType, World world) {
         super(entityType, world);
     }
-
 
     @Inject(method = "canGather", at = @At("HEAD"), cancellable = true)
     private void hammeringAnvil(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {

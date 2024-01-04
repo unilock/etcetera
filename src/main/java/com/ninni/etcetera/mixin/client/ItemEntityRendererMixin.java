@@ -28,5 +28,4 @@ public abstract class ItemEntityRendererMixin {
     private void onRender(Args args) {
         Optional.ofNullable(HandbellItemRenderer.modifyRenderItem(args.get(0), args.get(1))).ifPresent(model -> args.set(7, model));
     }
-
 }

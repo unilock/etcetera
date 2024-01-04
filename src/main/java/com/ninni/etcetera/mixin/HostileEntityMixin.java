@@ -10,10 +10,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(HostileEntity.class)
 public class HostileEntityMixin {
-
     @Inject(method = "isAngryAt", at = @At("HEAD"), cancellable = true)
     private void isPlayerUsingDreamCatcher(PlayerEntity player, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(!player.hasStatusEffect(EtceteraStatusEffects.DROWSY));
     }
-
 }

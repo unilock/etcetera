@@ -22,8 +22,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Environment(EnvType.CLIENT)
 @Mixin(ItemModels.class)
 public abstract class ItemModelsMixin {
-    @Shadow
-    public abstract BakedModelManager getModelManager();
+    @Shadow public abstract BakedModelManager getModelManager();
 
     @Inject(
         method = "getModel(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/model/BakedModel;",
@@ -31,8 +30,6 @@ public abstract class ItemModelsMixin {
         cancellable = true
     )
     private void onGetModel(ItemStack stack, CallbackInfoReturnable<BakedModel> cir) {
-        BakedModelManager models = this.getModelManager();
-        if (stack.getItem() instanceof HandbellItem) cir.setReturnValue(models.getModel(HandbellItemRenderer.INVENTORY_IN_HAND_MODEL_ID));
-
+        if (stack.getItem() instanceof HandbellItem) cir.setReturnValue(this.getModelManager().getModel(HandbellItemRenderer.INVENTORY_IN_HAND_MODEL_ID));
     }
 }
