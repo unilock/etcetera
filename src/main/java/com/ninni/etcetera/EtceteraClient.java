@@ -1,6 +1,6 @@
 package com.ninni.etcetera;
 
-import com.ninni.etcetera.registry.EtceteraVanillaIntegration;
+import com.ninni.etcetera.registry.EtceteraClientVanillaIntegration;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -10,6 +10,6 @@ public class EtceteraClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		EtceteraVanillaIntegration.clientInit();
+		EtceteraClientVanillaIntegration.clientInit();
 	}
 }
