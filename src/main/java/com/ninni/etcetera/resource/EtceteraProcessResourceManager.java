@@ -19,7 +19,7 @@ import net.minecraft.util.profiler.Profiler;
 import java.util.Collections;
 import java.util.Map;
 
-import static com.ninni.etcetera.Etcetera.*;
+import static com.ninni.etcetera.Etcetera.MOD_ID;
 
 public class EtceteraProcessResourceManager extends JsonDataLoader implements IdentifiableResourceReloadListener {
     public static final String FOLDER_KEY = "processes";

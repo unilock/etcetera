@@ -1,8 +1,8 @@
 package com.ninni.etcetera.block;
 
-import com.ninni.etcetera.registry.EtceteraBlockEntityType;
 import com.ninni.etcetera.block.entity.TintedLightBulbBlockEntity;
 import com.ninni.etcetera.block.enums.LightBulbBrightness;
+import com.ninni.etcetera.registry.EtceteraBlockEntityType;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;

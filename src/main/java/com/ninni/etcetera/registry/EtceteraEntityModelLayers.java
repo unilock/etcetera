@@ -1,8 +1,13 @@
 package com.ninni.etcetera.registry;
 
 import com.ninni.etcetera.Etcetera;
-import com.ninni.etcetera.client.model.*;
-import com.ninni.etcetera.entity.RubberChickenEntity;
+import com.ninni.etcetera.client.model.ChappleModel;
+import com.ninni.etcetera.client.model.CobwebProjectileModel;
+import com.ninni.etcetera.client.model.CottonArmorModel;
+import com.ninni.etcetera.client.model.GoldenGolemModel;
+import com.ninni.etcetera.client.model.RubberChickenModel;
+import com.ninni.etcetera.client.model.TurtleRaftModel;
+import com.ninni.etcetera.client.model.WeaverModel;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;

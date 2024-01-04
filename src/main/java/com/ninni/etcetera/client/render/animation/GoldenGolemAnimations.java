@@ -7,6 +7,7 @@ import net.minecraft.client.render.entity.animation.Animation;
 import net.minecraft.client.render.entity.animation.AnimationHelper;
 import net.minecraft.client.render.entity.animation.Keyframe;
 import net.minecraft.client.render.entity.animation.Transformation;
+
 import static net.minecraft.client.render.entity.model.EntityModelPartNames.*;
 
 @Environment(EnvType.CLIENT)

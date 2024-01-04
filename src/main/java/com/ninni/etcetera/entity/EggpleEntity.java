@@ -1,8 +1,8 @@
 package com.ninni.etcetera.entity;
 
 import com.ninni.etcetera.item.EggpleItem;
-import com.ninni.etcetera.registry.EtceteraItems;
 import com.ninni.etcetera.registry.EtceteraEntityType;
+import com.ninni.etcetera.registry.EtceteraItems;
 import net.minecraft.entity.EntityStatuses;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

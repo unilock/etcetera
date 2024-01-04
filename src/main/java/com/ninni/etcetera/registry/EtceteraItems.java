@@ -1,8 +1,23 @@
 package com.ninni.etcetera.registry;
 
-import com.ninni.etcetera.item.*;
+import com.ninni.etcetera.item.DreamCatcherItem;
+import com.ninni.etcetera.item.EggpleItem;
+import com.ninni.etcetera.item.GoldenGolemItem;
+import com.ninni.etcetera.item.HammerItem;
+import com.ninni.etcetera.item.HandbellItem;
+import com.ninni.etcetera.item.RubberChickenItem;
+import com.ninni.etcetera.item.SweaterItem;
+import com.ninni.etcetera.item.TransformingItem;
+import com.ninni.etcetera.item.TurtleRaftItem;
+import com.ninni.etcetera.item.WrenchItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.*;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.MusicDiscItem;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;

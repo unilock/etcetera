@@ -1,7 +1,7 @@
 package com.ninni.etcetera.block;
 
-import com.ninni.etcetera.registry.EtceteraProperties;
 import com.ninni.etcetera.block.enums.DrumType;
+import com.ninni.etcetera.registry.EtceteraProperties;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;

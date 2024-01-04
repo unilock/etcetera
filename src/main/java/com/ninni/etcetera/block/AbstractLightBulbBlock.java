@@ -1,9 +1,13 @@
 package com.ninni.etcetera.block;
 
-import com.ninni.etcetera.registry.EtceteraProperties;
 import com.ninni.etcetera.block.enums.LightBulbBrightness;
+import com.ninni.etcetera.registry.EtceteraProperties;
 import com.ninni.etcetera.registry.EtceteraSoundEvents;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.block.Waterloggable;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;

@@ -2,8 +2,8 @@ package com.ninni.etcetera.client.render.entity;
 
 import com.google.common.collect.Maps;
 import com.ninni.etcetera.client.model.ChappleModel;
-import com.ninni.etcetera.registry.EtceteraEntityModelLayers;
 import com.ninni.etcetera.entity.ChappleEntity;
+import com.ninni.etcetera.registry.EtceteraEntityModelLayers;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.EntityRendererFactory;

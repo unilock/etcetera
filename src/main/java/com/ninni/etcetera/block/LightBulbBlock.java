@@ -1,7 +1,7 @@
 package com.ninni.etcetera.block;
 
 import com.ninni.etcetera.block.enums.LightBulbBrightness;
-import net.minecraft.block.*;
+import net.minecraft.block.BlockState;
 
 public class LightBulbBlock extends AbstractLightBulbBlock {
 

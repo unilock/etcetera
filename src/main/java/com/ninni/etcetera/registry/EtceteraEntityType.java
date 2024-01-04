@@ -1,9 +1,21 @@
 package com.ninni.etcetera.registry;
 
 import com.ninni.etcetera.Etcetera;
-import com.ninni.etcetera.entity.*;
+import com.ninni.etcetera.entity.ChappleEntity;
+import com.ninni.etcetera.entity.CobwebProjectileEntity;
+import com.ninni.etcetera.entity.EggpleEntity;
+import com.ninni.etcetera.entity.GoldenGolemEntity;
+import com.ninni.etcetera.entity.GoldenGolemItemEntity;
+import com.ninni.etcetera.entity.RubberChickenEntity;
+import com.ninni.etcetera.entity.TurtleRaftEntity;
+import com.ninni.etcetera.entity.WeaverEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.passive.AnimalEntity;

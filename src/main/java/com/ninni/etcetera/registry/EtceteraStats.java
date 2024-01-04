@@ -5,7 +5,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.stat.StatFormatter;
 import net.minecraft.util.Identifier;
 
-import static net.minecraft.stat.Stats.*;
+import static net.minecraft.stat.Stats.CUSTOM;
 
 public class EtceteraStats {
 

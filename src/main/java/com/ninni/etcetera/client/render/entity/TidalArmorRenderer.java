@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.Identifier;
 
-import static com.ninni.etcetera.Etcetera.*;
+import static com.ninni.etcetera.Etcetera.MOD_ID;
 
 public class TidalArmorRenderer implements ArmorRenderer {
     private BipedEntityModel<LivingEntity> armorModel;

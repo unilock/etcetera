@@ -1,10 +1,10 @@
 package com.ninni.etcetera.client.render.entity;
 
-import com.ninni.etcetera.registry.EtceteraEntityModelLayers;
 import com.ninni.etcetera.client.model.TurtleRaftModel;
 import com.ninni.etcetera.client.render.entity.layer.TurtleRaftBannerLayer;
 import com.ninni.etcetera.client.render.entity.layer.TurtleRaftColorRenderLayer;
 import com.ninni.etcetera.entity.TurtleRaftEntity;
+import com.ninni.etcetera.registry.EtceteraEntityModelLayers;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.OverlayTexture;
